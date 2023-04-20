@@ -5,6 +5,7 @@ import javafx.collections.ObservableList;
 import javafx.scene.Node;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+
 import java.util.Comparator;
 import java.util.concurrent.TimeUnit;
 
@@ -32,6 +33,7 @@ public class BinarySearchSimulation extends AlgorithmSimulation {
             if(value < searchFor) {
                 // Make all squares from search and below disabled.
                 for(int i=start; i<=middle; i++) {
+
                     b = (Button)gridPane.getChildren().get(i);
                     b.setStyle("-fx-background-color: #666666");
                 }
